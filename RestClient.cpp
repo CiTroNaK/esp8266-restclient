@@ -142,6 +142,11 @@ void RestClient::setHeader(const char* header){
     num_headers++;
 }
 
+void RestClient::clearHeaders(){
+    headers[0] = (char)0;
+    num_headers = 0;
+}
+
 void RestClient::setContentType(const char* contentTypeValue){
     contentType = contentTypeValue;
 }

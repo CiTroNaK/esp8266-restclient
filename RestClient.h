@@ -24,6 +24,8 @@ public:
                 const char* body, String* response);
     // Set a Request Header
     void setHeader(const char*);
+    // Clear Request Headers
+    void clearHeaders();
     // Set Content-Type Header
     void setContentType(const char*);
     // Set SSL support on(1) or off(0)
